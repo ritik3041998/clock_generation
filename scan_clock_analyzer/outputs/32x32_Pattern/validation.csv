@@ -1,0 +1,5 @@
+check,expected,actual,deviation_pct,verdict,note
+active_pixels == pixels_per_line * lines_per_frame,1178.0,1178.0,0.0,PASS,Confirms the detected line/pixel grid actually tiles the active-pixel set. (38 active pixels excluded as leaked next-frame fragment - see warnings.)
+reconstructed frame ticks == total waveform samples,30113.0,30113.0,0.0,PASS,Confirms pixel/line/frame ticks are consistent with the raw sample count.
+fraction of lines matching modal line period,1.0,0.5,50.0,AMBIGUOUS,15/30 line transitions exactly match the modal line period (963 ticks); others reflect first/last-line edge effects or resonant-scan settling variability.
+"distinct counter states (info only, not a strict pass/fail)",31.0,981.0,3064.516129032258,INFO,"The digital counter file free-runs at the sample-clock rate and is not a clean line index, so large deviation here is expected, not an error."

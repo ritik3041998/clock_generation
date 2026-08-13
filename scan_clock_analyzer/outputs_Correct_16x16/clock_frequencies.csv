@@ -1,0 +1,2 @@
+dataset,waveform_file,gate_file,detection_method,total_samples,pixels_per_line,lines_per_frame,pixel_clock_ticks,line_clock_ticks,frame_clock_ticks,pixel_to_line_divider,line_to_frame_divider,frame_overhead_ticks,master_clock_hz,pixel_clock_hz,line_clock_hz,frame_clock_hz,warnings,validation
+Correct_16x16_Pattern,Correct_16x16_lines.csv,laser16x16.csv,gated,8349,16,16,30,494,8349,16.467,16.901,459,,,,,,active_pixels == pixels_per_line * lines_per_frame=PASS; reconstructed frame ticks == total waveform samples=PASS; fraction of lines matching modal line period=PASS

@@ -1,0 +1,4 @@
+check,expected,actual,deviation_pct,verdict,note
+active_pixels == pixels_per_line * lines_per_frame,1408.0,705.0,49.92897727272727,FAIL,Confirms the detected line/pixel grid actually tiles the active-pixel set.
+reconstructed frame ticks == total waveform samples,1408.0,1408.0,0.0,PASS,Confirms pixel/line/frame ticks are consistent with the raw sample count.
+fraction of lines matching modal line period,1.0,0.9985795454545454,0.14204545454545858,PASS,703/704 line transitions exactly match the modal line period (1 ticks); others reflect first/last-line edge effects or resonant-scan settling variability.
