@@ -1,0 +1,2 @@
+cd "C:\Users\Ritik Madhasia\OneDrive\Desktop\clcok_generation\scan_clock_analyzer"
+python analyze.py "..\MyPattern_Folder" --out outputs_MyPattern
